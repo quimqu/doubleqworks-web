@@ -4,8 +4,9 @@
   --text: #1c1b19;
   --muted: #6b6760;
   --line: #e6e2da;
-  --accent: #1f5f5b;
-  --accent-soft: #e3efed;
+  --accent: #0f5e63;
+  --accent-soft: #e2eff0;
+  --dot: #e2a72e;
   --tag: #f1eee7;
 }
 @media (prefers-color-scheme: dark) {
@@ -15,8 +16,9 @@
     --text: #ecebe7;
     --muted: #a19d95;
     --line: #2e2c29;
-    --accent: #7cc4bc;
-    --accent-soft: #1f3331;
+    --accent: #7cc4c4;
+    --accent-soft: #17302f;
+    --dot: #e2a72e;
     --tag: #272522;
   }
 }
@@ -37,7 +39,8 @@ a:hover { text-decoration-thickness: 2px; }
 .top { border-bottom: 1px solid var(--line); }
 .bar { display: flex; align-items: center; justify-content: space-between; height: 64px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 650; letter-spacing: -0.01em; }
-.mark { width: 34px; height: 21px; fill: none; stroke: var(--accent); stroke-width: 2.6; stroke-linecap: round; }
+.mark { height: 26px; width: auto; color: var(--accent); flex-shrink: 0; }
+.mark .dot { fill: var(--dot); }
 .langs { display: flex; gap: 4px; font-size: 14px; }
 .langs a, .langs span { padding: 4px 8px; border-radius: 6px; text-decoration: none; }
 .langs a { color: var(--muted); }
